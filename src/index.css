@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans&display=swap');
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo-clippath {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.logo-container {
+    width: 250px;
+    height: 70px;
+    background: white;  
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    padding: 1rem 3.5rem;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo-container > img {
+    width: 12rem;
+    height: auto;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .function-icon {
+        @apply text-2xl text-blue-300 hover:opacity-70 hover:-translate-y-1 cursor-pointer transform transition;
+    }
+
+    .navlink:not(.active) {
+        @apply py-0 px-1 rounded-sm text-gray-900 text-lg hover:bg-blue-300 hover:text-white transition transform
+    }
+    
+    .navlink.active {
+        @apply text-blue-500 text-lg py-0 px-1 rounded-sm transition transform
+    }
+
+    .text-input {
+        @apply w-full p-3 mt-2 border border-gray-300 rounded-md outline-none focus:ring focus:ring-offset-1 focus:ring-sky-400
+    }
+
+    .label {
+        @apply text-gray-700 text-lg
+    }
+
+    .form-group {
+        @apply mt-6 flex flex-col justify-center items-start
+    }
+    
+    .submit-button {
+        @apply py-1.5 px-2.5 mt-8 mb-6 w-full bg-sky-500 text-lg text-white rounded-sm hover:bg-sky-400 focus:bg-sky-600 transition disabled:bg-slate-300
+    }
+
+    .show-btn {
+        @apply mx-auto mt-8 py-1.5 px-3 text-gray-200 text-lg bg-blue-500 hover:-translate-y-1 hover:bg-blue-400 active:bg-blue-600 transform transition rounded-sm
+    }
+
+    .showroom {
+        @apply py-8 px-16 bg-gray-200 flex flex-col justify-center
+    }
+
+    .product-grid {
+        @apply grid grid-cols-1 gap-7 mx-auto justify-center items-center flex-wrap mt-8 text-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
+    }
+}
