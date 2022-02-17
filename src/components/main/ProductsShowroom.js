@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import ProductPreview from './ProductPreview'
 
 const SPECIFIC_COLLECTION = ['inNewArrival', 'inNewCollection', 'onSale']
-const SPECIFIC_CATEGORIES_OR_TAGS=['t-shirts', 't-shirt', 'polo-shirt', 'long-sleeve', 'short-sleeve', 'accessories', 'gadget', 'gadgets', 'sunglasses', 'shoes', 'footwear', 'sneakers']
+const SPECIFIC_CATEGORIES_OR_TAGS=['t-shirts', 't-shirt', 'polo-shirt', 'long-sleeve', 'short-sleeve', 'accessories', 'gadget', 'gadgets', 'sunglasses', 'shoes', 'footwear', 'sneakers', 'jackets', 'jeans', 'suit']
 const TITLE_MAP = {
     inNewArrival: 'New Arrival',
     inNewCollection: 'New Collection',
@@ -19,7 +19,10 @@ const TITLE_MAP = {
     sunglasses: 'Male Sunglasses',
     shoes: 'Male Shoes', 
     sneakers: 'Male Sneakers',
-    footwear: 'Male Footwear'
+    footwear: 'Male Footwear',
+    jacket: 'Jackets for Men',
+    jeans: 'Jeans',
+    suit: 'Suits for Men'
 }
 
 export default function ProductsShowroom() {
