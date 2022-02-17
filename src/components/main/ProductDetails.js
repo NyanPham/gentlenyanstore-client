@@ -19,7 +19,8 @@ export const COLOR_MAP = {
     sky: 'bg-sky-500',
     white: 'bg-white',
     brown: 'bg-amber-800',
-    black: 'bg-gray-900'
+    black: 'bg-gray-900',
+    amber: 'bg-amber-500'
 }
 
 export default function ProductDetails() {
@@ -129,7 +130,7 @@ export default function ProductDetails() {
                 <div className="w-full h-96 flex justify-center items-center sm:w-2/4">
                     {currentProduct?.imageURL && (
                         <img 
-                        className="w-72"
+                        className="w-auto max-h-full"
                         src={currentProduct.imageURL}
                         alt={currentProduct.name}
                     />
