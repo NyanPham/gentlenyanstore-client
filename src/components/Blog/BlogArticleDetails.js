@@ -18,6 +18,7 @@ export default function BlogArticleDetails() {
         }
     )
 
+    console.log(articleId)
     return (
         <div className="py-7 px-12">
             <h2 className="text-3xl pb-7 font-semibold text-blue-900 w-full border-b border-b-gray-400">{currentArticle?.title}</h2>
