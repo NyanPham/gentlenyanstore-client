@@ -5,7 +5,6 @@ import { useSelector } from 'react-redux'
 export default function Blogs() {
     const articles = useSelector(state => state.articles)
     const currentUser = useSelector(state => state.currentUser)
-    console.log(articles)
     
 
     return (
