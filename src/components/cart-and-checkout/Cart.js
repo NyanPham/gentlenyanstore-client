@@ -11,10 +11,10 @@ export default function Cart() {
     const currentUser = useSelector(state => state.currentUser)
 
     return (
-        <section className="p-8 bg-white">
+        <section className="bg-white p-5 sm:p-8">
             <div className="flex flex-row gap-3 items-center">
-                <h2 className="text-2xl font-normal">Your Cart</h2>
-                <p className="text-slate-500">
+                <h2 className="text-xl font-normal sm:text-2xl">Your Cart</h2>
+                <p className="text-slate-500 text-sm  sm:text-base">
                     (
                         <span className="underline font-bold">
                             {basket.length}

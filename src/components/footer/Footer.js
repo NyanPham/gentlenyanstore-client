@@ -78,19 +78,23 @@ export default function Footer() {
                     <a href="https://goo.gl/maps/DC9A7efDK4BmacCD6" target="_blank" className="text-blue-400 text-sm w-max" onClick={scrollToTop}>Sitemap</a>
                 </div>
             </div>
-            <form onSubmit={handleNewsletterSub}>
+            <form onSubmit={handleNewsletterSub} className="max-w-full">
                 <h2 className="text-blue-100 text-lg uppercase tracking-wider mb-5">Join our newsletter now</h2>
-                <input
-                    className="py-2 px-3 bg-transparent text-gray-100 text-base outline-none border border-blue-100 rounded-md focus:ring focus:ring-blue-100 transition" 
-                    placeholder="Email Address"
-                    ref={emailRef}
-                    disabled={message}
-                />
-                <button 
-                    className="p-2 bg-gray-800 text-sm text-gray-100 ml-2 rounded-md hover:bg-gray-700 focus:bg-gray-900 tracking-wide transition md:p-3"
-                    type="submit"
-                    disabled={message || loading}
-                >GO</button> 
+                <div className="flex">
+                    <input
+                        className="py-2 px-3 bg-transparent w-4/5 text-gray-100 text-base outline-none border border-blue-100 rounded-md focus:ring focus:ring-blue-100 transition" 
+                        placeholder="Email Address"
+                        ref={emailRef}
+                        rel='noreferrer'
+                        disabled={message}
+                    />
+                    <button 
+                        className="p-2 bg-gray-800 text-sm text-gray-100 ml-2 rounded-md hover:bg-gray-700 focus:bg-gray-900 tracking-wide transition md:p-3"
+                        type="submit"
+                        disabled={message || loading}
+                    >GO</button> 
+                </div>
+                
             </form>
             {loading && <Spinner />}
             {message && <MessageModal message={message} isError={false}/>}

@@ -51,7 +51,7 @@ export default function IntroGrid() {
                     />
                 ))}
             </div>
-            <div className="py-8 px-16 h-100 grid grid-cols-1 grid-rows-5 justify-center gap-2 items-center relative max-auto md:grid-rows-3 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2">
+            <div className="py-8 px-16 h-100 grid grid-cols-1 w-full grid-rows-5 justify-center gap-2 items-center relative max-auto md:grid-rows-3 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2">
                 <div 
                     className="relative order-1 h-60 w-full bg-cover bg-no-repeat bg-center md:order-2 lg:order-1" 
                     style={{backgroundImage: `url(${manSunglasses})`, backgroundColor: 'rgba(0,0,0,0.3)', backgroundBlendMode: 'multiply'}}

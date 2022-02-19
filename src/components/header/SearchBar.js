@@ -20,7 +20,7 @@ export default function SearchBar() {
         }
         dispatch(setSearchItems(searchedItems, searchedTerms))
         navigate('/items/search-results')
-    }, [searchedTerms])
+    }, [searchedTerms, dispatch])
 
     useEffect(() => {
         if (visible) searchBarRef.current.focus()
@@ -52,7 +52,7 @@ export default function SearchBar() {
         <div className="relative flex items-center">
             <FontAwesomeIcon icon={faSearch} className="function-icon" onClick={toggleSearchBar}/>
             <input 
-                className={`text-input mt-0 py-1 px-2 absolute right-12 w-72 ${visible ? 'translate-x-0 opacity-100 pointer-events-auto' : 'translate-x-3 opacity-0 pointer-events-none'} duration-300 transition transform md:w-36 lg:w-72`} 
+                className={`text-input mt-0 py-1 px-2 absolute right-12 w-52 ${visible ? 'translate-x-0 opacity-100 pointer-events-auto' : 'translate-x-3 opacity-0 pointer-events-none'} duration-300 transition transform md:w-36 lg:w-72`} 
                 value={searchedTerms} 
                 onChange={handleSearchedTermsChange} 
                 onBlur={handleInputBlur}

@@ -79,9 +79,10 @@ function App() {
 				</Router>
 			</div>
 			<div id="toasts-container">
-				<ToastContainer />
-			</div>
+					<ToastContainer />
+				</div>
 			<div id="modal-container"></div>
+			<div id="navbar-positioner"></div>
 		</>
 	);
 }

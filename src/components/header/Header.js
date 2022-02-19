@@ -20,7 +20,7 @@ export default function Header() {
 
     return (
         <header className="w-100">
-            <div className="px-8 py-4 flex justify-between w-100 bg-gray-800 text-white">
+            <div className="px-5 py-4 sm:px-8 flex justify-between w-100 bg-gray-800 text-white">
                 <div className="hidden space-x-3 items-center text-base md:flex">
                     <a 
                         href="https://www.facebook.com/people/GentleNyan-Pham/100078417304926/" 
@@ -63,7 +63,7 @@ export default function Header() {
                     }
                 </div>
             </div>
-            <div className="px-8 py-4 bg-white flex justify-between items-center relative">
+            <div className="px-5 py-4 sm:px-8  bg-white flex justify-between items-center relative">
                 <div className="hidden flex-row gap-3 sm:flex">
                     <div className="text-base text-blue-300 flex justify-center items-center" >
                         <FontAwesomeIcon icon={faPhoneVolume} className="text-3xl"/>
@@ -83,7 +83,7 @@ export default function Header() {
                     </div>
                     <p className="text-3xl font-md tracking-12 sm:pt-5 z-10 group-hover:shadow-white group-hover:shadow-2xl group-hover:scale-105 group-hover:text-gray-700 transform transition">GentleNyan</p>
                 </Link>
-                <div className="mr-7 flex flex-row gap-5 sm:mr-0">
+                <div className="flex flex-row gap-5">
                     <SearchBar />
                     <Link to={`${currentUser ? '/cart' : '/login'}`} className="relative">
                         <FontAwesomeIcon icon={faShoppingCart} className="function-icon"/>

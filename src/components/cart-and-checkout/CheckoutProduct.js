@@ -36,11 +36,11 @@ export default function CheckoutProduct(props) {
 
     return (
         <div className={`mb-7 grid grid-cols-2 grid-rows-1 items-start gap-1 mt-4 ${isOnPayment ? '' : 'md:grid-cols-5 md:grid-rows-1 md:justify-between md:items-center md:gap-6'}`}>
-            <div className={`h-36 w-36 row-span-2 ${isOnPayment ? 'md:row-span-0': ''}`}>
+            <div className={`h-24 w-24 row-span-2 sm:h-36 sm:w-36 ${isOnPayment ? 'md:row-span-0': ''}`}>
                 <img className="max-w-full max-h-full" src={imageURL} alt={name}/>
             </div>
             <div className={`${isOnPayment ? '': 'md:col-span-2'}`}>
-                <p className="text-gray-700 text-base">{name} - {color} - {size} </p>
+                <p className="text-gray-700 text-sm sm:text-base">{name} - {color} - {size} </p>
                 <button 
                     className="py-1 px-2 bg-white border border-gray-700 text-sm text-gray-900 rounded-md mt-3 hover:bg-gray-900 hover:text-white transition active:ring active:ring-gray-700"
                     onClick={handleRemoveItemClick}
