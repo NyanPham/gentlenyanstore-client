@@ -81,8 +81,8 @@ function App() {
 			<div id="toasts-container">
 					<ToastContainer />
 				</div>
-			<div id="modal-container"></div>
 			<div id="navbar-positioner"></div>
+			<div id="modal-container"></div>
 		</>
 	);
 }

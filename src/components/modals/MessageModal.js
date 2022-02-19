@@ -16,7 +16,7 @@ export default function MessageModal({ message, isError }) {
                 <div 
                     className={`
                         ${open ? 'opacity-100 scale-100 pointer-events-auto motion-safe:animate-modalShow' : 'opacity-0 scale-0 pointer-events-none motion-safe:animate-modalHide'}
-                        p-5 mx-auto bg-white flex flex-col justify-center items-center gap-4 fixed top-3 left-1/2 -translate-x-1/2 z-70 rounded-lg shadow-lg md:flex-row transform transition`
+                        w-4/5 p-5 mx-auto bg-white flex flex-row justify-center items-center gap-4 fixed top-16 left-1/2 -translate-x-1/2 z-70 rounded-lg shadow-lg transform transition sm:w-3/5 md:w-2/5`
                 }>                
                     <div className={`${isError ? 'bg-red-500 py-3 px-4' : 'bg-green-500 p-4'} rounded-full flex justify-center items-center`}>
                         <FontAwesomeIcon icon={isError ? faTimes : faCheck} className="text-3xl text-white"/>

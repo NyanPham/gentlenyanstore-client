@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 export default function PaymentFailure() {
     return (
         <section className="h-screen flex-center items-center bg-gray-200">
-            <div className="p-8 w-3/5 mx-auto bg-white flex flex-col justify-center items-center gap-4 rounded-lg shadow-lg translate-y-20 md:flex-row md:w-2/5">
+            <div className="p-8 w-4/5 mx-auto bg-white flex flex-col justify-center items-center gap-4 rounded-lg shadow-lg translate-y-20 sm:w-3/5 md:flex-row md:w-2/5">
                 <div className="py-3 px-4 bg-red-500 rounded-full flex justify-center items-center">
                     <FontAwesomeIcon icon={faTimes} className="text-3xl text-white"/>
                 </div>

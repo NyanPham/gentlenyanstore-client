@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 export default function PaymentSuccess() {
     return (
         <section className="h-screen flex-center items-center bg-gray-200">
-            <div className="p-8 w-3/5 mx-auto bg-white flex flex-col justify-center items-center gap-4 rounded-lg shadow-lg translate-y-20 md:flex-row md:w-2/5">                
+            <div className="p-8 w-4/5 mx-auto bg-white flex flex-col justify-center items-center gap-4 rounded-lg shadow-lg translate-y-20 sm:w-3/5 md:flex-row md:w-2/5">                
                 <div className="p-4 bg-green-500 rounded-full flex justify-center items-center">
                     <FontAwesomeIcon icon={faCheck} className="text-3xl text-white"/>
                 </div>
@@ -14,7 +14,7 @@ export default function PaymentSuccess() {
                 <div>
                     <h2 className="text-2xl font-bold">Success</h2>
                     <p>
-                        Your transaction was success. We will deliver your items in about 2-3 days.
+                        Your transaction was successful. We will deliver your items in about 2-3 days.
                         Thank you.
                     </p>
                 </div>
