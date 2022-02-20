@@ -20,14 +20,14 @@
   <p align="center">
     An E-Commerce website specialized into men's fashion. Intergrated with Firebase to allow serverless functionalities such as authentication, database manipulation.
     <br />
-    <a href="https://github.com/NyanPham/gentlenyanstore-client.git"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/NyanPham/gentlenyanstore-client"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://kind-jepsen-d6f299.netlify.app/">View Demo</a>
     ·
-    <a href="https://github.com/NyanPham/gentlenyanstore-client.git/issues">Report Bug</a>
+    <a href="https://github.com/NyanPham/gentlenyanstore-client/issues">Report Bug</a>
     ·
-    <a href="https://github.com/NyanPham/gentlenyanstore-client.git">Request Feature</a>
+    <a href="https://github.com/NyanPham/gentlenyanstore-client">Request Feature</a>
   </p>
 </div>
 
