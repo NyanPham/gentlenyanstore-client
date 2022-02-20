@@ -62,7 +62,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![GentleNyan]images here[product-screenshot]](https://kind-jepsen-d6f299.netlify.app/)
+![gentleNyan](https://user-images.githubusercontent.com/93678376/154845633-e767cf2d-b457-49b9-a21a-a45a355ae390.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -70,9 +70,9 @@
 
 ### Built With
 
-* [HTML]
-* [CSS]
-* [JavaScript]
+* HTML
+* CSS
+* JavaScript
 * [React.js](https://reactjs.org/)
 * [Tailwindcss](https://tailwindcss.com/)
 * [Redux](https://redux.js.org/)
@@ -151,8 +151,8 @@ LinkedIn: [https://www.linkedin.com/in/nhan-pham-84a602232/](https://www.linkedi
 
 * [Redux Thunk](https://redux.js.org/)
 * [FontAwesome](https://fontawesome.com/)
-* [Firestore](https://firebase.google.com/)
-* [Storage](https://firebase.google.com/)
+* [Firebase - Firestore](https://firebase.google.com/)
+* [Firebase - Storage](https://firebase.google.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
