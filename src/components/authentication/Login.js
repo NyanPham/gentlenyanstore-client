@@ -26,14 +26,14 @@ export default function Login() {
     }, [currentUser])
 
     return (
-        <div className="py-8 px-16 bg-white h-screen text-center motion-safe:animate-fadeIn">
-            <div className="flex justify-between items-center">
+        <div className="py-8 bg-white h-screen text-center motion-safe:animate-fadeIn">
+            <div className="px-8 flex justify-between items-center sm:px-16">
                 <Link to="/"><h2 className="text-3xl text-gray-500 text-slate-500">GentleNyan</h2></Link>
                 <Link to="/signup" className="py-1.5 px-2.5 bg-sky-500 text-sm text-white rounded-sm hover:bg-sky-400 hover:-translate-y-2 hover:shadow-xl transform transition">
                     Sign Up
                 </Link>
             </div>
-            <form className="text-center max-w-lg mx-auto mt-6" onSubmit={handleLogIn}>
+            <form className="px-16 text-center max-w-lg mx-auto mt-6" onSubmit={handleLogIn}>
                 <h2 className="text-3xl text-gray-900 font-bold">Welcome!</h2>
                 <h3 className="text-slate-500 mt-6">Enter your info below to login</h3>
                 {error && <p className="text-red-500">{error}</p>}
