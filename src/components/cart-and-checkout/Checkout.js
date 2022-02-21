@@ -78,9 +78,9 @@ export default function Checkout() {
 
     return (
         <section className="p-8 bg-white flex flex-col gap-8 lg:flex-row motion-safe:animate-fadeIn">
-            <div className="items-center lg:w-2/4 lg:sticky lg:top-0">
+            <div className="items-center lg:h-max lg:w-2/4 lg:sticky lg:top-0">
                 <h2 className="text-2xl font-normal">Your Cart</h2>
-                <p className="text-slate-500">
+                <p className="text-gray-500">
                     (
                         <span className="underline font-bold">
                             {basket.length}
