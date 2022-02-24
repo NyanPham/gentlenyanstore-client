@@ -46,9 +46,8 @@ export default function About() {
                             </p>
                             <p className="mt-7 text-gray-700 leading-loose">
                                 I also love human languages, that’s why I can speak 
-                                English and a bit of Japanese. Not to boast but I 
-                                passed the JLPT N2 in December, 2021. That means I was 
-                                studying Japanese and coding at the same time. 
+                                English and a bit of Japanese. I passed the JLPT N2 last December, which means I was 
+                                studying Japanese and coding at the same time. I am a bit proud of myself now, but there is still a lot to learn, of course. 
                                 Those were hard days, yet I will always treasure 
                                 and walk on my own path.
                             </p>
